@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TravelSphere</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav aria-label="Main Navigation">
+            <label for="check" class="checkbtn" aria-label="Menu Button">
+                &#9776; 
+            </label>
+            <input type="checkbox" id="check" class="hidden-checkbox">
+            <ul role="navigation">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login">
+        <h2>Login</h2>
+        <form action="authenticate_user" method="POST">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+            </div>
+    
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required aria-required="true" placeholder="Enter your password">
+            </div>
+    
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelSphere. All rights reserved.</p>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

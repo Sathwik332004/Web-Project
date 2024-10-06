@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - TravelSphere</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header role="banner">
+        <nav aria-label="Main Navigation">
+            <label for="check" class="checkbtn" aria-label="Menu Button">
+                &#9776; 
+            </label>
+            <input type="checkbox" id="check" class="hidden-checkbox">
+            <ul role="navigation">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register">
+        <h2>Create Your Account</h2>
+        <form action="register_user" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required aria-required="true" placeholder="Choose a username">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+            </div>
+    
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required aria-required="true" placeholder="Create a password">
+            </div>
+    
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required aria-required="true" placeholder="Re-enter your password">
+            </div>
+    
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelSphere. All rights reserved.</p>
+    </footer>
+</body>
+</html>
